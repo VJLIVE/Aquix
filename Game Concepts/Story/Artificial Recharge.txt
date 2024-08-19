@@ -10,7 +10,7 @@ Description: Alex arrives in the village and meets a concerned villager who expl
 Gameplay: The player moves Alex around to interact with villagers and view the problem areas.
 
 Scene 2: Understanding the Problem -
-Description: Alex visits the village's water source and sees the impact of low groundwater levels.
+Description: Alex visits the village's water source and sees the impact of low groundwater levels. He asks the villager for an option. The villager suggests for Artificial Recharge as a solution for this issue.
 Content: A brief tutorial popup explains that groundwater levels can be replenished using artificial recharge techniques.
 Gameplay: The player clicks to read about artificial recharge and its benefits.
 
