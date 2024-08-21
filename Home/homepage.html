@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <title>Aquix Home</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #000;
+}
+
+nav img {
+    height: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-size: 20px;
+}
+
+nav .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav .right-icons i {
+    font-size: 16px;
+}
+
+nav .play-now-btn {
+    background-color: #ff4655;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+nav .play-now-btn:hover {
+    background-color: #e33b47;
+}
+
+/* Main Content Styles */
+.main-content {
+    position: relative;
+    text-align: center;
+}
+
+.main-content img {
+    width: 1260px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.main-content .content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-content p {
+    font-size: 14px;
+}
+
+.main-content h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.main-content .play-free-btn {
+    background-color: #ff4655;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.main-content .play-free-btn:hover {
+    background-color: #e33b47;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF4655;
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://imgs.search.brave.com/X2CIhrqGzSS3BwxnFh3LPN-TghXJS6D_NpcC1vXb6WQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzQ0LzQyLzI2/LzM2MF9GXzc0NDQy/MjY1Nl9PWTJDRzZv/U01tb2phS2RGcUtB/OGhzU3Z0Q0RjS3g5/Zy5qcGc');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 50%;
+    margin-right: 50px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content {
+    max-width: 50%;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.play-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.dark-gray-box {
+    width: 100%; /* Full width */
+    height: 60px; /* Height of 20px */
+    background-color: #333; /* Dark gray color */
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-logos {
+    margin: 20px 0;
+}
+
+.footer-logos img {
+    margin: 0 20px;
+    height: 50px;
+}
+
+.footer-text {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="https://placehold.co/80x40" alt="Riot Games Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Let's Play</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Connect With Us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="right-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-globe"></i>
+            <a href="#" class="play-now-btn">PLAY NOW</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <img src="https://imgs.search.brave.com/pZON6uZJR25jTnP1hhw8IRr9PrXs84gG1BSCIMqaRrY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzUxLzU1LzA1/LzM2MF9GXzc1MTU1/MDUxMV9Xenp5SE9H/elp1dXlDbFVKTGV4/VDczQ0JTRVhvTnNk/VC5qcGc" alt="Aquix Background">
+        <div class="content-overlay">
+            <p>An adventure and strategical, single player game</p>
+            <h1>AQUIX</h1>
+            <a href="#" class="play-free-btn">PLAY FOR FREE</a>
+        </div>
+    </div>
+    <div class="dark-gray-box"></div>
+    <!--Main body-->
+    <div class="hero-section">
+        <div class="hero-image">
+            <img src="https://imgs.search.brave.com/wCJ3WC_PT9f17VeOxFsUkEsEw8PKeHcLUK8RkVMWycA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUyMzE1/MDUuanBn" alt="Valorant Console Launch Image">
+        </div>
+        <div class="content">
+            <h1>CONSOLE LAUNCH</h1>
+            <p>VALORANT // YR 4</p>
+            <a href="#" class="play-button">PLAY NOW</a>
+        </div>
+    </div>
+    <div class="dark-gray-box"></div>
+    <div class="main-content">
+        <img src="https://imgs.search.brave.com/zaGN9PK1vlJ63PiXVoI_kQMTHil-HNAZqjy_kTBMQgc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzU4LzI5LzMx/LzM2MF9GXzc1ODI5/MzE0NV9SQmpJdk5B/ZmRZNDVBWElLY3FR/czVRc0VLSENDcmlt/eS5qcGc" alt="main body 1">
+    </div>
+    <div class="dark-gray-box"></div>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#" i class="fab fa-instagram"></i></a>
+            <a href="#" i class="fab fa-facebook"></i></a>
+            <a href="#" i class="fab fa-youtube"></i></a>
+            <a href="#" i class="fab fa-discord"></i></a>
+        </div>
+        <div class="footer-logos">
+            <img src="https://placehold.co/150x50" alt="Riot Games Logo">
+        </div>
+        <div class="footer-text">
+            <p>This is an area for adding footer text</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">PRIVACY NOTICE</a> |
+            <a href="#">TERMS OF SERVICE</a>
+        </div>
+    </footer>
+</body>
+</html>
