@@ -1,0 +1,83 @@
+/* NavBar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(0, 40, 85, 0.9);
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 170, 255, 0.3);
+}
+
+nav img {
+  height: 50px;
+}
+.points-box {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+nav .logo-text {
+  font-size: 28px; /* Adjust size as needed */
+  color: #fff; /* Set title name color to white */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a {
+  color: #fff; /* Ensure text color is white */
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  color: #00aaff;
+}
+
+nav .right-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav .right-icons a {
+  text-decoration: none;
+  color: #fff; /* Ensure text color is white */
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+nav .right-icons a:hover {
+  background-color: #008fcc;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 170, 255, 1);
+  color: #fff;
+}
+
+nav .login-btn {
+  background-color: #00aaff;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff; /* Ensure text color is white */
+}
