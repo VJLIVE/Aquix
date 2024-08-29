@@ -1,0 +1,172 @@
+Creating a word-guessing game in React where you match answers to questions and highlight the correctness of each letter involves several steps. Here’s a guide to set up such a game:
+
+1. Setup Your React App
+First, ensure you have a React app set up. If you don’t have one, create a new app using Create React App:
+
+bash
+Copy code
+npx create-react-app word-guess-game
+cd word-guess-game
+2. Install Dependencies
+You might want to use additional libraries for styling or state management, but for simplicity, we'll use basic React features. If you want to use CSS for styling, ensure you have the styles ready.
+
+3. Basic File Structure
+You might want a structure like this:
+
+lua
+Copy code
+src/
+|-- components/
+|   |-- GameBoard.js
+|   |-- Question.js
+|-- App.js
+|-- index.js
+4. Implementing the Game
+Here’s a simple example of how you can implement the game:
+
+Question.js
+This component displays the question at the top.
+
+jsx
+Copy code
+import React from 'react';
+
+const Question = ({ question }) => {
+  return (
+    <div className="question">
+      <h1>{question}</h1>
+    </div>
+  );
+};
+
+export default Question;
+GameBoard.js
+This component manages the input boxes and checks the answers.
+
+jsx
+Copy code
+import React, { useState } from 'react';
+
+const GameBoard = ({ answer }) => {
+  const [input, setInput] = useState(Array(answer.length).fill(''));
+  const [feedback, setFeedback] = useState(Array(answer.length).fill(''));
+
+  const handleChange = (e, index) => {
+    const value = e.target.value.toUpperCase();
+    const newInput = [...input];
+    newInput[index] = value;
+    setInput(newInput);
+
+    // Provide feedback
+    const newFeedback = [...feedback];
+    if (value === answer[index]) {
+      newFeedback[index] = 'green';
+    } else if (value && !answer.includes(value)) {
+      newFeedback[index] = 'red';
+    } else {
+      newFeedback[index] = '';
+    }
+    setFeedback(newFeedback);
+  };
+
+  return (
+    <div className="game-board">
+      <div className="input-boxes">
+        {input.map((value, index) => (
+          <input
+            key={index}
+            type="text"
+            maxLength="1"
+            value={value}
+            onChange={(e) => handleChange(e, index)}
+            style={{ backgroundColor: feedback[index] }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default GameBoard;
+App.js
+This component integrates the Question and GameBoard components.
+
+jsx
+Copy code
+import React from 'react';
+import Question from './components/Question';
+import GameBoard from './components/GameBoard';
+import './App.css';
+
+function App() {
+  const question = 'What is the popular water natural earthquake?';
+  const answer = 'TSUNAMI'; // Example answer
+
+  return (
+    <div className="App">
+      <Question question={question} />
+      <GameBoard answer={answer} />
+    </div>
+  );
+}
+
+export default App;
+5. Styling
+Add some basic styling to make the game look better. Create App.css or use a CSS-in-JS approach.
+
+App.css
+
+css
+Copy code
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.question h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-boxes input {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  margin: 5px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-boxes input:focus {
+  outline: none;
+}
+6. Run the Application
+Start the React application with:
+
+bash
+Copy code
+npm start
+Summary
+In this setup:
+
+Question.js displays the question.
+GameBoard.js manages the word input and feedback highlighting.
+App.js integrates the components and provides the question and answer.
+App.css styles the game.
+You can expand this by adding features such as:
+
+Multiple questions and answers.
+Validation for complete words.
+Improved feedback logic and styling.
+Feel free to customize the styles and functionality to fit your needs.
+
+
+
+
