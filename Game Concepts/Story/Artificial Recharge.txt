@@ -14,10 +14,25 @@ Description: Alex visits the village's water source and sees the impact of low g
 Content: A brief tutorial popup explains that groundwater levels can be replenished using artificial recharge techniques.
 Gameplay: The player clicks to read about artificial recharge and its benefits.
 
-Scene 3: Learning About Recharge Pits -
-Description: Alex is shown a simple recharge pit model and its components. The villager explains how these pits help in collecting and directing rainwater into the ground.
-Content: The game provides information that recharge pits are often made using materials like sand and gravel because they allow water to percolate into the ground.
-Question 1: After learning about recharge pits, Alex is asked, “What materials are typically used to build an effective recharge pit?”
+Script:
+Alex: What happened Grandpa?
+Grandpa: The well is empty because the water in the ground water got empty.
+Grandpa: I have to water my crops. For water, I'll have to travel around 10km to fetch water now.
+Question: What can Alex do now?
+Option 1: Ask him for any help he can do
+Option 2: Advice him to travel 10km
+
+If Option 1:
+Alex: Can I help you with something?
+Grandpa: Yes you can, I am thinking of creating an artificial recharge.
+Alex: What is Artificial Recharge?
+System: Definition --
+Alex: So, what can I do?
+Grandpa: Go get some materials required for the Artificial Recharge.
+
+Alex goes to shop, and question appears
+
+Question: After learning about recharge pits, Alex is asked, “What materials are typically used to build an effective recharge pit?”
 Options:
 A) Concrete and metal.
 B) Sand and gravel.
