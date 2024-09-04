@@ -1,0 +1,43 @@
+/* src/components/Shop.css */
+
+.shop {
+  background-color: #8e44ad;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.shop h2 {
+  margin-bottom: 20px;
+}
+
+.shop ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shop li {
+  background-color: #9b59b6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #7d3c98;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.shop li button:hover {
+  background-color: #6c3483;
+}

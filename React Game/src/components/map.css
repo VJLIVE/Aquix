@@ -1,0 +1,31 @@
+/* src/components/Map.css */
+
+.map {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #2980b9;
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 20px;
+    color: white;
+  }
+  
+  .map button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .map button:hover {
+    background-color: #2980b9;
+  }
+  

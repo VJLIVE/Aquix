@@ -1,0 +1,31 @@
+/* src/components/NPC.css */
+
+.npc {
+  position: absolute; /* Ensures NPCs are positioned relative to their parent */
+  width: 50px; /* Smaller width */
+  height: 50px; /* Smaller height */
+  background-color: #e04938; /* Bright red to stand out */
+  color: white;
+  padding: 3px; /* Smaller padding */
+  border-radius: 50%; /* Keeps the circular shape */
+  text-align: center;
+  line-height: 14px; /* Adjusted for smaller height */
+  font-size: 10px; /* Smaller font size */
+  cursor: pointer;
+  z-index: 10; /* Ensures NPC is on top of other elements */
+}
+
+.npc button {
+  margin-top: 5px; /* Smaller margin above the button */
+  padding: 3px 5px; /* Smaller padding for the button */
+  font-size: 8px; /* Smaller font size for the button */
+  background-color: #3498db; /* Button background color */
+  border: none;
+  border-radius: 3px; /* Slightly rounded corners */
+  color: white;
+  cursor: pointer;
+}
+
+.npc button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}

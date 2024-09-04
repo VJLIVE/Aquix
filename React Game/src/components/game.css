@@ -1,0 +1,21 @@
+.game-world {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  /*background-image: url('/assets/bg.png');*/
+  background-position: center; /* Center the image */
+  background-size:cover;  /*Ensure the image is fully visible within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+.main-menu-button {
+  position: fixed;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  z-index: 100; /* Ensure the button is on top */
+}
