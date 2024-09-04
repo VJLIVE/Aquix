@@ -18,7 +18,7 @@ This project aims to create an interactive and fun game designed to teach the nu
 The usage guide provides step-by-step instructions on how to access, navigate, and play the game. It will cover the basic game mechanics, how to earn points, and the significance of each decision made within the game. Additionally, it will explain how players can track their scores online and strive to become water-smart certified youths.
 
 ## 3. Project Structure
-This section provides an overview of the project's structure, detailing the organization of files and directories. It explains the purpose of key components, such as the game engine, user interface, backend server, and database. This guide helps new developers understand the architecture of the project and how different parts interact. Refer #WORKFLOW.md for better understanding.
+This section provides an overview of the project's structure, detailing the organization of files and directories. It explains the purpose of key components, such as the game engine, user interface, backend server, and database. This guide helps new developers understand the architecture of the project and how different parts interact. Refer [#WORKFLOW.md](https://github.com/VJLIVE/Aquix/blob/main/WORKFLOW%20.md) for better understanding.
 
 ## 4. Project Status and Roadmap
 The project is currently in development, with initial prototypes focusing on core gameplay and scenario implementation. The roadmap includes plans for expanding the game with additional features like multiplayer mode, advanced scoring algorithms, and more complex scenarios. Future updates will also focus on refining the user experience and optimizing performance for both web and mobile platforms.
