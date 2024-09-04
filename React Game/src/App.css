@@ -1,0 +1,202 @@
+/* App.css */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e3d59; /* Earthy, water-themed colors */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.title-screen .title {
+  font-size: 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-menu button {
+  margin: 10px;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a7c59;
+  color: white;
+}
+
+.main-menu button:hover {
+  background-color: #356e3a;
+}
+
+.game-world {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/bg.png'); /* Use an image of an island */
+  background-size: cover;
+  background-position: center;
+}
+
+/*.npc, .inventory, .shop, .map {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}*/
+
+.npc {
+  position: absolute; /* Ensures NPCs are positioned relative to their parent */
+  width: 50px; /* Smaller width */
+  height: 50px; /* Smaller height */
+  background-color: #e04938; /* Bright red to stand out */
+  color: white;
+  padding: 3px; /* Smaller padding */
+  border-radius: 50%; /* Keeps the circular shape */
+  text-align: center;
+  line-height: 14px; /* Adjusted for smaller height */
+  font-size: 10px; /* Smaller font size */
+  cursor: pointer;
+  z-index: 10; /* Ensures NPC is on top of other elements */
+}
+
+.npc button {
+  margin-top: 5px; /* Smaller margin above the button */
+  padding: 3px 5px; /* Smaller padding for the button */
+  font-size: 8px; /* Smaller font size for the button */
+  background-color: #3498db; /* Button background color */
+  border: none;
+  border-radius: 3px; /* Slightly rounded corners */
+  color: white;
+  cursor: pointer;
+}
+
+.npc button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+inventory {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background-color: #27ae60;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.inventory h2 {
+  margin-bottom: 20px;
+}
+
+.inventory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.inventory li {
+  background-color: #2ecc71;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inventory li p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
+
+/* src/components/Shop.css */
+
+.shop {
+  background-color: #8e44ad;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.shop h2 {
+  margin-bottom: 20px;
+}
+
+.shop ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shop li {
+  background-color: #9b59b6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display:grid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #7d3c98;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.shop li button:hover {
+  background-color: #6c3483;
+}
+
+/* src/components/Map.css */
+
+.map {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: #2980b9;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 20px;
+  color: white;
+}
+
+.map button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.map button:hover {
+  background-color: #2980b9;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
