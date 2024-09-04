@@ -10,3 +10,11 @@ This document contains detailed flowcharts outlining the technical workflow and 
 
 
 
+# FIREBASE INTERGRATION WITH REACT JS
+https://www.freecodecamp.org/news/use-firebase-authentication-in-a-react-app/
+
+# FIRESTORE DATABASE MANAGEMENT
+https://firebase.google.com/docs
+
+# GODOT 2D GAME
+https://docs.godotengine.org/en/stable/getting_started/first_2d_game/index.html
