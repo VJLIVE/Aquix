@@ -34,6 +34,8 @@ Reporting Issues
 If you encounter bugs, have questions, or want to suggest improvements, please open an issue on GitHub. Provide as much detail as possible, including steps to reproduce the issue or a clear description of your suggestion.
 
 **Additional Notes**
+
 **License:** By contributing to this project, you agree that your contributions will be licensed under the same open-source license as the project.
+
 **Communication:** Join the discussion on our project’s discussion board to stay updated on project progress and connect with other contributors.
 Thank you for your contributions! Together, we can make a meaningful impact on groundwater conservation through this educational game.
