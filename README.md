@@ -33,7 +33,7 @@ The contribution guidelines outline how other developers and contributors can ge
 Reporting Issues
 If you encounter bugs, have questions, or want to suggest improvements, please open an issue on GitHub. Provide as much detail as possible, including steps to reproduce the issue or a clear description of your suggestion.
 
-**Additional Notes**
+****Additional Notes****
 
 **License:** By contributing to this project, you agree that your contributions will be licensed under the same open-source license as the project.
 
