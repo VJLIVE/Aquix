@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore"; // Import Firestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCePkU3XCBz3F1EOHqDhrXChGOETiJLYNk",
-  authDomain: "aquix-testing-2.firebaseapp.com",
-  projectId: "aquix-testing-2",
-  storageBucket: "aquix-testing-2.appspot.com",
-  messagingSenderId: "69561819046",
-  appId: "1:69561819046:web:9d6be8a27faaab468af967"
+  apiKey: "API_KEY",
+  authDomain: "AUTH_DOMAIN",
+  projectId: "PROJECT_ID",
+  storageBucket: "STORAGE_BUCKET",
+  messagingSenderId: "MESSAGING_SENDER_ID",
+  appId: "APP_ID"
 };
 
 // Initialize Firebase
